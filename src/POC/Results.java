@@ -96,9 +96,12 @@ public class Results {
 		System.out.println("val2: " +val2);			
 		System.out.println("------------------------------------");
 		
-		Optional<Transaction> smallestTransaction = transactions.stream()
-		        												.min(comparing(Transaction::getValue));
-		System.out.println(smallestTransaction.map(String::valueOf).orElse("No transactions found"));
+		/*
+		 * Optional<Transaction> smallestTransaction = transactions.stream()
+		 * .min(comparing(Transaction::getValue));
+		 * System.out.println(smallestTransaction.map(String::valueOf).
+		 * orElse("No transactions found"));
+		 */
 	}
 
 }
